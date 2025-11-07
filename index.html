@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Student Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Student Management System</h1>
+
+  <form id="studentForm">
+    <input type="number" id="id" placeholder="ID" required />
+    <input type="text" id="name" placeholder="Name" required />
+    <input type="text" id="registerNumber" placeholder="Register Number" required />
+    <input type="number" id="marks" placeholder="Marks" required />
+    <button type="submit">Add Student</button>
+  </form>
+
+  <div class="buttons">
+    <button id="sortMarks">Sort by Marks</button>
+    <button id="exportData">Export JSON</button>
+  </div>
+
+  <table id="studentTable">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Register Number</th>
+        <th>Marks</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
